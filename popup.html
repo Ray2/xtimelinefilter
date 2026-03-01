@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Timeline filter</title>
+  </head>
+  <body>
+    <div class="top">
+      <button id="clearBtn" class="ghost">Clear</button>
+      <div class="title">Timeline filter</div>
+      <a class="ghost" id="optionsLink" href="#">Options</a>
+    </div>
+
+    <div id="list" class="list"></div>
+
+    <div class="footer">
+      <label class="mode">
+        <span>Mode</span>
+        <select id="modeSelect">
+          <option value="hide">Hide</option>
+          <option value="blur">Blur</option>
+        </select>
+      </label>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

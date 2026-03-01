@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Timeline Filter Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Timeline Filter Options</h1>
+      <p class="muted">
+        This extension filters by matching keywords/regex against tweet text. Edit patterns per category.
+        One pattern per line. You can use raw regex like <code>\bword\b</code> or JS style <code>/word/i</code>.
+      </p>
+
+      <div class="toolbar">
+        <button id="saveBtn">Save</button>
+        <button id="exportBtn" class="ghost">Export JSON</button>
+        <label class="import">
+          Import JSON
+          <input id="importFile" type="file" accept="application/json" />
+        </label>
+      </div>
+
+      <div id="cats"></div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
